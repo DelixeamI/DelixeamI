@@ -37,11 +37,6 @@
   <circle cx="820" cy="40" r="80" fill="#6366f1" opacity="0.12" filter="url(#subtleGlow)" />
   <circle cx="100" cy="180" r="90" fill="#06b6d4" opacity="0.1" filter="url(#subtleGlow)" />
 
-  <!-- Terminal Style Top Status Indicator -->
-  <g transform="translate(36, 32)">
-    <circle cx="0" cy="0" r="4.5" fill="#10b981" />
-    <text x="12" y="4" class="mono terminal-prompt">ai-engineer:production-systems ~$ status: active</text>
-  </g>
 
   <!-- Main Name & Title -->
   <g transform="translate(36, 78)">

@@ -1,7 +1,7 @@
-# Mikhail
+# Mikhail Ivanov
 
 **AI & LLM Systems Engineer · Production LLM Backend · Healthcare & Multimodal AI**  
-Russia · Remote · mihail_jackson@list.ru · [Telegram](https://t.me/your_handle)  
+Russia · Remote · [+7 (927) 899-24-96](tel:+79278992496) · [mikhailivanovr@gmail.com](mailto:mikhailivanovr@gmail.com) · [Telegram](https://t.me/Mihail_r63)  
 [GitHub Profile](https://github.com/DelixeamI) · [AI Engineering Portfolio](AI_LLM_PORTFOLIO.md) · [Case Studies](CASE_STUDIES.md)
 
 ---

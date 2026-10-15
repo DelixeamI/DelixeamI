@@ -2,7 +2,7 @@
 
 **Mikhail (DelixeamI)**  
 AI / LLM Systems Engineer · Production LLM Backend · Healthcare & Multimodal AI Platforms  
-[GitHub](https://github.com/DelixeamI) · [Telegram](https://t.me/your_handle) · [Email](mailto:mihail_jackson@list.ru)
+[GitHub](https://github.com/DelixeamI) · [Telegram](https://t.me/Mihail_r63) · [Email](mailto:mikhailivanovr@gmail.com) · Phone: [+7 (927) 899-24-96](tel:+79278992496)
 
 This portfolio focuses on production-grade LLM reliability, deterministic guardrails, self-hosted local inference, hybrid retrieval (RAG), and data pipeline architectures. Sensitive medical records, proprietary business rules, and private infrastructure keys are omitted or de-identified.
 

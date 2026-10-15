@@ -2,7 +2,7 @@
 
 **Mikhail (DelixeamI)**  
 AI / LLM Systems Engineer · Production LLM Backend · Healthcare & Multimodal AI Platforms  
-[GitHub](https://github.com/DelixeamI) · [Telegram](https://t.me/your_handle) · [Email](mailto:mihail_jackson@list.ru)
+[GitHub](https://github.com/DelixeamI) · [Telegram](https://t.me/Mihail_r63) · [Email](mailto:mikhailivanovr@gmail.com) · Phone: [+7 (927) 899-24-96](tel:+79278992496)
 
 These case studies detail real production problems, systems designed, personal responsibilities, and quantified engineering outcomes. Proprietary clinical rules, private patient records, and internal credentials are de-identified or omitted.
 

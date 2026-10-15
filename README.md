@@ -2,8 +2,8 @@
 
 <img width="100%" src="./assets/header.svg" alt="Mikhail (DelixeamI): AI & LLM Systems Engineer · Production LLM Backend · Healthcare & Multimodal AI Platforms" />
 
-[![Telegram](https://img.shields.io/badge/Telegram-@your__handle-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/your_handle)
-[![Email](https://img.shields.io/badge/Email-mihail__jackson%40list.ru-EA4335?style=for-the-badge&logo=mail.ru&logoColor=white)](mailto:mihail_jackson@list.ru)
+[![Telegram](https://img.shields.io/badge/Telegram-@Mihail__r63-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Mihail_r63)
+[![Email](https://img.shields.io/badge/Email-mikhailivanovr%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mikhailivanovr@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-DelixeamI-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DelixeamI)
 [![AI Portfolio](https://img.shields.io/badge/AI_Engineering_Portfolio-111827?style=for-the-badge&logo=readthedocs&logoColor=white)](AI_LLM_PORTFOLIO.md)
 [![Case Studies](https://img.shields.io/badge/Case_Studies-374151?style=for-the-badge&logo=readthedocs&logoColor=white)](CASE_STUDIES.md)
@@ -20,7 +20,7 @@
 
 <br/>
 
-**Telegram [@your_handle](https://t.me/your_handle) · [mihail_jackson@list.ru](mailto:mihail_jackson@list.ru) · Russia · Open to Remote (Middle AI / LLM Engineer)**
+**Telegram [@Mihail_r63](https://t.me/Mihail_r63) · [+7 (927) 899-24-96](tel:+79278992496) · [mikhailivanovr@gmail.com](mailto:mikhailivanovr@gmail.com) · Russia · Open to Remote (Middle AI / LLM Engineer)**
 
 </div>
 

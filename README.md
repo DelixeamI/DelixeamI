@@ -26,21 +26,15 @@
 
 ---
 
-## ⚡ Profile & Engineering Philosophy
+##  Profile 
 
 I am an **AI / LLM Systems Engineer** focused on production LLM reliability, deterministic guardrails, self-hosted local inference, and high-performance backend pipelines.
 
 With **2.5+ years of production infrastructure engineering** (Linux, Docker, Zabbix/Grafana cluster monitoring, subnet isolation, InfoSec/EDS) and **commercial Python backend experience in Healthcare** (LIS integration and medical analyzer stream protocols), I bridge the gap between probabilistic machine learning and mission-critical production systems.
 
-I treat LLMs not as magic oracles, but as **slow, probabilistic, untrusted external dependencies**. Building around them requires:
-- **Zero-trust data boundaries**: Pydantic v2 strict schemas, JSON Schema constrained decoding, and runtime validation.
-- **Deterministic-first architectures**: Heavy lifting, safety checks, and medical thresholds remain deterministic; LLMs are isolated to synthesis and nuanced arbitration.
-- **Privacy & offline perimeters**: Air-gapped and local self-hosted inference (Ollama on RTX 5070, BGE-M3 embeddings, Qwen 2.5/3) ensuring sensitive commercial and patient data never leaves the local perimeter.
-- **Quantitative evaluation**: Every pipeline decision is proven with labeled benchmarks, precision/recall tracking, and silent error metrics rather than "vibe checks".
-
 ---
 
-## 🚀 Selected Production & Engineering Results
+## Selected Production & Engineering Results
 
 - **97.5% Precision on 196-Item Clinical Benchmark** ([`lab-price-matcher`](https://github.com/DelixeamI/lab-price-matcher)): Built a 3-tier matching pipeline (`retrieve → filter → judge`) aligning 2,300+ medical services against 656 internal records. Local reasoning model (`qwen3:8b`) dropped false positive pairs from **29 to 3**, achieving **88.1% price catalog coverage**.
 - **Zero-Hallucination Clinical MVP** ([`skylab-med-ai`](AI_LLM_PORTFOLIO.md#case-2-skylab-med-ai-zero-hallucination-clinical-report-interpretation)): Architected a 5-layer diagnostic report interpreter. Ensured 100% deterministic numeric checks and PII de-identification before generating patient summaries. Guarded by **218 automated unit tests**.
@@ -50,7 +44,7 @@ I treat LLMs not as magic oracles, but as **slow, probabilistic, untrusted exter
 
 ---
 
-## 🛠️ Featured Engineering Work
+## Featured Engineering Work
 
 ### 1. [lab-price-matcher: Hybrid RAG & Domain-Constrained LLM Judge](https://github.com/DelixeamI/lab-price-matcher)
 > **Stack**: Python 3.12 · Ollama (`qwen3:8b`) · BGE-M3 Embeddings · RapidFuzz · Pydantic · Offline Evals
@@ -126,21 +120,21 @@ flowchart TD
 My background in **Systems Administration & IT Security** at SkyLab provides a strong operational foundation:
 
 ```
-┌────────────────────────────────────────────────────────────────────────┐
-│                   Production Infrastructure Matrix                     │
-├──────────────────────────┬─────────────────────────────────────────────┤
-│ Cluster Monitoring       │ Zabbix + Grafana (virtual & physical hosts) │
-│ Containerization         │ Docker, Docker Compose, Multi-stage builds  │
-│ Network & Security       │ Subnet segmentation (Staff vs Public VLANs) │
-│ Identity & Encryption    │ Digital Signature Infrastructure (EDS/ЭЦП)  │
+┌─────────────────────────────────────────────────────────────────────────┐
+│                   Production Infrastructure Matrix                      │
+├──────────────────────────┬──────────────────────────────────────────────┤
+│ Cluster Monitoring       │ Zabbix + Grafana (virtual & physical hosts)  │
+│ Containerization         │ Docker, Docker Compose, Multi-stage builds   │
+│ Network & Security       │ Subnet segmentation (Staff vs Public VLANs)  │
+│ Identity & Encryption    │ Digital Signature Infrastructure (EDS/ЭЦП)   │
 │ Hardware Integration     │ Serial / TCP Python drivers for LIS Analyzers│
-│ Local Compute Inference  │ Dedicated RTX 5070 running Ollama / vLLM    │
-└──────────────────────────┴─────────────────────────────────────────────┘
+│ Local Compute Inference  │ Dedicated RTX 5070 running Ollama / vLLM     │
+└──────────────────────────┴──────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🧰 Technical Skills
+## Technical Skills
 
 | Domain | Technologies & Frameworks |
 |---|---|
@@ -153,11 +147,11 @@ My background in **Systems Administration & IT Security** at SkyLab provides a s
 
 ---
 
-## 📚 Portfolio Documentation & Case Studies
+##  Portfolio Documentation & Case Studies
 
-- 📖 **[Detailed AI Engineering Portfolio (AI_LLM_PORTFOLIO.md)](AI_LLM_PORTFOLIO.md)**: In-depth breakdown of state orchestration, Pydantic contracts, deterministic fallback chains, and retrieval evaluation.
-- 🔬 **[Engineering Case Studies (CASE_STUDIES.md)](CASE_STUDIES.md)**: Real-world problems, trade-offs, architecture decisions, and business impact from healthcare and AI pipelines.
-- 📄 **[Curriculum Vitae (CV.md)](CV.md)**: Concise, professional resume formatted for engineering hiring managers.
+-  **[Detailed AI Engineering Portfolio (AI_LLM_PORTFOLIO.md)](AI_LLM_PORTFOLIO.md)**: In-depth breakdown of state orchestration, Pydantic contracts, deterministic fallback chains, and retrieval evaluation.
+-  **[Engineering Case Studies (CASE_STUDIES.md)](CASE_STUDIES.md)**: Real-world problems, trade-offs, architecture decisions, and business impact from healthcare and AI pipelines.
+-  **[Curriculum Vitae (CV.md)](CV.md)**: Concise, professional resume formatted for engineering hiring managers.
 
 ---
 

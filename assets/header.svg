@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="220">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0b1329" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="badgeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Consolas, 'SF Mono', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .title { font-weight: 800; font-size: 32px; letter-spacing: -0.5px; fill: #ffffff; }
+    .subtitle { font-weight: 500; font-size: 14.5px; fill: #94a3b8; letter-spacing: 0.2px; }
+    .terminal-prompt { font-weight: 600; font-size: 13px; fill: #10b981; }
+    .tag-text { font-weight: 600; font-size: 11.5px; fill: #cbd5e1; }
+  </style>
+
+  <!-- Background Card -->
+  <rect width="918" height="218" x="1" y="1" rx="14" fill="url(#bgGradient)" stroke="#1e293b" stroke-width="1.5" />
+  
+  <!-- Subtle Glow Effect Top Right -->
+  <circle cx="820" cy="40" r="80" fill="#6366f1" opacity="0.12" filter="url(#subtleGlow)" />
+  <circle cx="100" cy="180" r="90" fill="#06b6d4" opacity="0.1" filter="url(#subtleGlow)" />
+
+  <!-- Terminal Style Top Status Indicator -->
+  <g transform="translate(36, 32)">
+    <circle cx="0" cy="0" r="4.5" fill="#10b981" />
+    <text x="12" y="4" class="mono terminal-prompt">ai-engineer:production-systems ~$ status: active</text>
+  </g>
+
+  <!-- Main Name & Title -->
+  <g transform="translate(36, 78)">
+    <text x="0" y="0" class="sans title">Mikhail <tspan fill="url(#textGradient)">· AI &amp; LLM Systems Engineer</tspan></text>
+    <text x="0" y="26" class="sans subtitle">Production LLM Reliability · RAG &amp; Local Inference · Multimodal Pipelines · Systems Architecture</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="36" y1="134" x2="884" y2="134" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Core Competency Badges -->
+  <g transform="translate(36, 154)">
+    <!-- Badge 1: Local Inference -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="30" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <circle cx="14" cy="15" r="3.5" fill="#38bdf8" />
+      <text x="26" y="19" class="mono tag-text">Ollama / RTX 5070 Local</text>
+    </g>
+
+    <!-- Badge 2: Structured Output -->
+    <g transform="translate(192, 0)">
+      <rect width="185" height="30" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <circle cx="14" cy="15" r="3.5" fill="#818cf8" />
+      <text x="26" y="19" class="mono tag-text">Pydantic v2 / Guardrails</text>
+    </g>
+
+    <!-- Badge 3: Hybrid RAG -->
+    <g transform="translate(389, 0)">
+      <rect width="195" height="30" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <circle cx="14" cy="15" r="3.5" fill="#c084fc" />
+      <text x="26" y="19" class="mono tag-text">Hybrid RAG (BGE-M3 + Fuzz)</text>
+    </g>
+
+    <!-- Badge 4: Production Infrastructure -->
+    <g transform="translate(596, 0)">
+      <rect width="252" height="30" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <circle cx="14" cy="15" r="3.5" fill="#10b981" />
+      <text x="26" y="19" class="mono tag-text">Linux / Zabbix &amp; Grafana / Docker</text>
+    </g>
+  </g>
+</svg>

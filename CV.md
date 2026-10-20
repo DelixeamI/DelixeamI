@@ -1,69 +1,79 @@
-# Mikhail Ivanov
+# Михаил Иванов
 
 **AI & LLM Systems Engineer · Production LLM Backend · Healthcare & Multimodal AI**  
-Russia · Remote · [+7 (927) 899-24-96](tel:+79278992496) · [mikhailivanovr@gmail.com](mailto:mikhailivanovr@gmail.com) · [Telegram](https://t.me/Mihail_r63)  
+Россия · Удалённая работа · [+7 (927) 899-24-96](tel:+79278992496) · [mikhailivanovr@gmail.com](mailto:mikhailivanovr@gmail.com) · [Telegram](https://t.me/Mihail_r63)  
 [GitHub Profile](https://github.com/DelixeamI) · [AI Engineering Portfolio](AI_LLM_PORTFOLIO.md) · [Case Studies](CASE_STUDIES.md)
 
 ---
 
-## Executive Summary
+## О себе (Executive Summary)
 
-AI / LLM Systems Engineer with 2.5+ years of production infrastructure engineering (Linux, Docker, Zabbix/Grafana cluster observability, network security) and commercial Python backend experience in Healthcare (Laboratory Information Systems, medical analyzer protocol integration). Specialized in high-reliability LLM backend architectures, deterministic guardrails, self-hosted local inference (Ollama, Qwen 2.5/3, BGE-M3), and hybrid retrieval (RAG). Shipped a medical price list synchronization pipeline reaching 97.5% precision on a 196-item benchmark, built a zero-hallucination clinical report interpreter guarded by 218 unit tests, and engineered a 14-stage multimodal DAG pipeline achieving 6.5x real-time video processing at $0.00 compute cost.
-
----
-
-## Technical Skills
-
-- **AI & LLM Engineering**: Ollama, Local Qwen 2.5/3, Gemini 3.1 API, PyTorch, LangGraph / State DAG concepts, Pydantic v2 Structured Outputs, JSON Schema constrained decoding, Prompt Engineering, Guardrails, Offline Evaluation Benchmarks.
-- **RAG & Search**: BGE-M3 dense embeddings, Cosine similarity, RapidFuzz lexical matching, Hybrid retrieval, Re-ranking, Candidate filtering.
-- **Backend & APIs**: Python 3.12, FastAPI, AsyncIO, Pydantic v2, RESTful APIs, SSE streaming, Strict typing (`mypy --strict`), Poetry/Uv.
-- **Databases & Storage**: PostgreSQL (Relational modeling, transactions), Redis (Response caching at temp=0, semaphores, rate limiting).
-- **DevOps & Observability**: Linux (Debian/Ubuntu), Docker, Docker Compose, Zabbix, Grafana, Git, GitHub Actions, Hardware-accelerated inference (NVIDIA RTX 5070 / CUDA).
-- **Domain & Security**: Laboratory Information Systems (LIS AlfaLab), RS-232 / TCP analyzer protocols (ASTM/HL7), Subnet VLAN isolation, Digital signature infrastructure (EDS / ЭЦП).
+AI / LLM Systems Engineer с бэкграундом в production-инфраструктуре (Linux, Docker, кластерная наблюдаемость Zabbix/Grafana, сетевая безопасность) и коммерческой бэкенд-разработке на Python в сфере Healthcare (лабораторные информационные системы, интеграция протоколов анализаторов). Специализируюсь на проектировании высоконадёжных LLM-бэкендов, детерминированных guardrails, гибридных RAG-пайплайнов и асинхронных DAG-конвейеров. Вывел в прод сервис сопоставления номенклатурных каталогов на Qdrant и Cross-Encoder (сократил онбординг с 3 дней до 50 минут при precision 99,1%), спроектировал мультимодальный конвейер обработки первичных документов с детерминированной валидацией НДС и tool calling в 1С, а также разработал гибридный RAG по медицинским регламентам с Faithfulness 98,8% и Context Recall 94,8%.
 
 ---
 
-## Professional Experience
+## Технические навыки (Technical Skills)
 
-### AI & Systems Engineer · SkyLab Medical Laboratory
-**June 2023 - Present · On-site / Hybrid**
-
-- **Cross-Catalog Lab Price Matcher (`lab-price-matcher`)**:
-  - Architected a 3-tier cascade (`retrieve → filter → judge`) mapping 2,300+ competitor medical services against 656 internal tests.
-  - Implemented hybrid candidate retrieval combining BGE-M3 dense vectors with RapidFuzz token matching.
-  - Formulated ~20 deterministic medical constraint rules (`compatible()`) in Python, filtering out invalid antibody and test method pairings prior to model invocation.
-  - Deployed local `qwen3:8b` via Ollama on an RTX 5070 with constrained JSON Schema output; enabling reasoning mode reduced false matches from 29 to 3.
-  - Achieved **97.5% Precision** and **88.1% Catalog Coverage** on an offline 196-item benchmark.
-- **Clinical Lab Report Interpreter (`skylab-med-ai`)**:
-  - Architected a 5-layer diagnostic report interpreter strictly decoupling deterministic numeric checks from natural language synthesis.
-  - Built an adversarial PII de-identification layer ensuring patient identifiable data never reaches model contexts.
-  - Developed a comprehensive **218-test automated test suite** validating boundary conditions, unit conversions, and silent failure handlers.
-- **Laboratory Information System & Hardware Protocol Engineering**:
-  - Engineered custom Python modules to ingest, parse, and validate continuous binary and text streams from automated diagnostic analyzers into AlfaLab LIS.
-  - Designed and operated full-stack telemetry using **Zabbix + Grafana** across physical and virtual server clusters running LIS databases and services.
-  - Implemented network segregation (isolated medical device VLANs vs administrative networks) and managed digital cryptographic signature (EDS/ЭЦП) lifecycle.
+- **AI & LLM Engineering**: OpenAI API (GPT-4o / GPT-4o-mini), Claude API (Claude 3 Haiku), Structured Outputs (Pydantic v2 / JSON Schema), Tool Calling (Function Calling), Evals в CI/CD (Context Recall, Faithfulness), Guardrails, Self-hosted инференс (Ollama, vLLM, Qwen), Prompt Engineering.
+- **RAG & Search**: Qdrant (payload pre-filtering), PostgreSQL / PGVector (HNSW), Full-Text Search (FTS), RRF (Reciprocal Rank Fusion), плотные эмбеддинги (`multilingual-e5-base`, `bge-m3`), локальные Cross-Encoders (`mmarco-mMiniLMv2-L12-H384-v1`), трёхслойный триаж уверенности, парсинг сложных табличных PDF (`pdfplumber` с breadcrumbs).
+- **Backend & APIs**: Python 3.12, FastAPI, AsyncIO (asyncio.Semaphore, асинхронные DAG-пайплайны), Pydantic v2, RESTful APIs, Token Bucket rate limiting, динамический микро-батчинг, строгая типизация (`mypy --strict`), интеграция с 1С (OpenAPI).
+- **Базы данных и кэширование**: PostgreSQL (реляционное моделирование, транзакции, аудит-логи), Redis (exact-match кэширование, rate limiting, дедупликация по SHA-256), Qdrant.
+- **DevOps, надёжность и безопасность**: Docker, Docker Compose, Linux (Debian/Ubuntu), CI/CD (Quality Gates, автотесты), Multi-provider fallback (Azure OpenAI → AWS Bedrock), корпоративные соглашения ZDR (Zero Data Retention), Zabbix, Grafana, Git.
+- **Доменная область**: Лабораторные информационные системы (ЛИС АльфаЛаб), протоколы анализаторов (ASTM/HL7 по RS-232 / TCP), сегментация сетей (VLAN 802.1Q), инфраструктура ЭЦП (КриптоПро CSP).
 
 ---
 
-## Featured AI & Engineering Projects
+## Опыт работы (Professional Experience)
 
-### Multimodal 14-Stage DAG Pipeline · `stream-highlight-harvester`
-**Stack: Python 3.12, Whisper ASR, Silero VAD, OpenCV, Video-VLM, NVENC, DAG Engine**
-- Built a modular DAG engine with SHA-256 content-addressable caching to skip re-running heavy transcription and audio separation stages.
-- Designed a 2-tier architecture where fast local models (Whisper with phonetic gaming lexicon, Silero VAD, CV motion) prune 98% of dead time.
-- Implemented an 8-keyframe bundle strategy (~300 KB) feeding a multimodal VLM (Gemini Flash Lite / Qwen 2.5 14B) with strict Pydantic `JudgeVerdict` contracts.
-- Achieved **6.5x real-time speed** (3.5h stream in 28 min) at **$0.00 compute cost** with 113 passing unit tests.
+### AI / LLM Engineer · Медицинская лаборатория «СкайЛаб» (SkyLab)
+**01.11.2024 — по настоящее время (Ноябрь 2024 — н.в.) · Удалённо / Гибрид**
 
-### Production Async LLM Gateway · `llm-chat-api`
-**Stack: FastAPI, AsyncIO, Pydantic v2, PostgreSQL, Redis, Ollama, Docker Compose**
-- Developed an asynchronous LLM backend with Redis caching for zero-temperature requests, cutting repeat response latency to <10ms.
-- Built concurrency controls using async semaphores, per-request token budgeting, and sliding context window management.
-- Enforced JSON Schema structured output decoding (100% schema conformance on validation tests vs 0% prompt-only failure rate).
-- Validated with `mypy --strict` and 142 automated tests.
+- **RAG-сервис условий хранения и совместимости реагентов с анализаторами**:
+  - Сократил время поиска условий хранения и совместимости реагентов с анализаторами с 7–12 минут ручной сверки по PDF до ~4 секунд.
+  - Построил гибридный поиск в PostgreSQL: PGVector (HNSW) + FTS с рус/англ словарями, слияние через RRF. Разработал парсинг таблиц температурных режимов на `pdfplumber`: каждая строка разворачивается в отдельный фрагмент с breadcrumbs раздела, чтобы не смешивать условия для невскрытых флаконов и растворов на борту анализатора.
+  - Внедрил GPT-4o-mini со Structured Outputs: ответ отдаётся, только если цитата дословно найдена в контексте, а температурный диапазон совпадает с источником, иначе система выдаёт контролируемый отказ.
+  - Настроил Evals в CI на 250 экспертных сценариях: Context Recall 94,8%, Faithfulness 98,8%, доля ложных отказов 2,4%.
+  - Развернул Redis: exact-match кэш (~38% запросов, latency <15 мс) и rate limiting; настроил fallback на резервный LLM API и выдачу сырых выдержек из регламентов при недоступности LLM.
+  - **Стек**: FastAPI, Pydantic, PostgreSQL / PGVector, Redis, Docker, pdfplumber.
+
+- **Сервис автоматического извлечения и предпроверки первичных документов (счета, УПД, акты)**:
+  - Разработал и вывел в прод сервис автоматического извлечения и предпроверки первичных документов: поток ~4 500 документов в месяц от 300+ поставщиков. Сократил трудозатраты бухгалтерии на ввод на ~70%: ~82% документов идут по быстрому сценарию (45 секунд вместо 6–8 минут, включая 30 секунд финального ревью), остальные уходят на ручной разбор.
+  - Построил пайплайн на FastAPI и Pydantic со Structured Outputs: связка `pdfplumber` + GPT-4o-mini для текстовых PDF и multimodal GPT-4o для сканов. На выборке из 500 документов от 80 поставщиков достиг точности 98,4% по реквизитам и 94,8% по строкам таблиц, сократив ошибки ввода на 92% относительно ручного ввода.
+  - Вынес расчёты из модели в детерминированный валидатор сумм и НДС (с допуском расхождений ±0,05 руб.): модель отвечает только за экстракцию значений, а документы с арифметическими расхождениями маркируются флагом и уходят на разбор без блокировки общей очереди.
+  - Реализовал сверку ИНН/КПП, расчётных счетов и договоров со справочником через tool calling (OpenAPI): несовпадения и коллизии подсвечиваются в интерфейсе предпросмотра перед экспортом черновика документа в 1С.
+  - Внедрил двухуровневую дедупликацию: вычисление SHA-256 хеша файла в Redis до вызова модели исключает повторную платную обработку, а составной ключ реквизитов с учётом номера исправления защищает 1С от двойных проводок по повторным и исправленным УПД.
+  - Обеспечил отказоустойчивость и безопасность: асинхронная очередь задач с ретраями (exponential backoff + jitter) при деградации внешнего API, работа с LLM API по корпоративному соглашению ZDR (Zero Data Retention) и полный аудит-лог действий в PostgreSQL.
+  - **Стек**: FastAPI, Pydantic, PostgreSQL, Redis, GPT-4o, GPT-4o-mini, pdfplumber, OpenAPI / 1С, Docker.
+
+- **Сервис интеллектуального сопоставления партнерских прайс-листов с мастер-каталогом**:
+  - Спроектировал и вывел в прод сервис сопоставления партнерских прайс-листов (Excel/PDF, до 5 000 позиций) с мастер-каталогом лаборатории: автоматический пайплайн обрабатывает прайс за 3–4 минуты, полный онбординг с ручной верификацией сократился с 2–3 дней до ~50 минут при снижении нагрузки на методистов с 4 до 0.5 FTE (поток ~45 прайсов в месяц).
+  - Построил retrieval-слой на Qdrant (dense-эмбеддинги `multilingual-e5-base` с пре-фильтрацией по payload: биоматериал и тип исследования): на эталонном датасете из 1 500 позиций поднял Hit Rate@1 с 0.68 до 0.89 и MRR с 0.74 до 0.91 относительно бейзлайна на BM25.
+  - Внедрил локальный cross-encoder (`mmarco-mMiniLMv2-L12-H384-v1`) и трёхуровневый триаж уверенности: поднял Hit Rate@1 с 0.89 до 0.94 после реранкинга; 82% строк матчатся автоматически со скором от 0.88 и выше (precision 99,1%), 15% неоднозначных случаев разрешает LLM (GPT-4o-mini с fallback на Claude 3 Haiku), 3% со скором ниже 0.60 уходят оператору. Доля критических ошибок (неверный биоматериал или методика в каталоге) ниже 0.5%.
+  - Собрал фиксированный асинхронный DAG на FastAPI и asyncio вместо агентного цикла: внедрил ограничение конкурентности (`asyncio.Semaphore`) и скорости запросов (Token Bucket) к LLM API, динамический микро-батчинг строк по токенам. Это снизило latency LLM-этапа в 4 раза и снизило частоту ошибок 429 до <0.1%, удержав себестоимость процессинга прайса на уровне ~45 ₽ (~$0.50).
+  - Обеспечил отказоустойчивость и контроль качества: автоматический fallback между провайдерами (Azure OpenAI → AWS Bedrock) при сбоях, валидация схем через Pydantic и Quality Gate в CI, блокирующий деплой при падении end-to-end точности пайплайна на тестовом датасете более чем на 0.5 п.п.
+  - **Стек**: FastAPI, asyncio, Qdrant, Cross-Encoder (`mmarco-mMiniLMv2`), multilingual-e5-base, Pydantic, Redis, Azure OpenAI / AWS Bedrock, Docker.
 
 ---
 
-## Education
+## Избранные AI и инженерные проекты (Featured Projects)
 
-**University Degree in Computer Science / Information Systems**  
-Focus: Linux systems administration, Docker, Ansible, Python backend engineering, Neural Networks & Deep Learning (PyTorch).
+### Мультимодальный 14-стадийный DAG-пайплайн · `stream-highlight-harvester`
+**Стек: Python 3.12, Whisper ASR, Silero VAD, OpenCV, Video-VLM, NVENC, кастомный DAG-движок**
+- Разработал модульный DAG-движок с SHA-256 контентным кэшированием стадий для пропуска повторной тяжелой транскрипции и аудиосепарации.
+- Спроектировал 2-контурную архитектуру: быстрые локальные CPU-модели (Whisper с фонетическим словарем, Silero VAD, CV-детектор движения) отсекают 98% хронометража со скоростью 100x realtime без использования VRAM.
+- Внедрил стратегию упаковки бандла из 8 ключевых 360p кадров (~300 КБ) для передачи в мультимодальную VLM (Gemini Flash Lite / Qwen 2.5 14B) со строгой Pydantic-схемой `JudgeVerdict`.
+- Достиг скорости обработки **6.5x real-time** (3.5-часовой стрим за 28 минут) при **$0.00 затрат на облачные вычисления**, архитектура полностью валидирована 113 юнит-тестами.
+
+### Отказоустойчивый асинхронный LLM Gateway · `llm-chat-api`
+**Стек: FastAPI, AsyncIO, Pydantic v2, PostgreSQL, Redis, Ollama, Docker Compose**
+- Разработал асинхронный LLM-бэкенд с Redis-кэшированием для детерминированных запросов (`temperature=0`), снизив задержку повторных ответов до <10 мс.
+- Реализовал контроль конкурентности через асинхронные семафоры, пошаговое бюджетирование токенов и скользящее управление контекстным окном.
+- Обеспечил гарантированный Structured Output по JSON Schema (100% соответствие схеме на тестах валидации против частых сбоев чистого промптинга).
+- Кодовая база верифицирована с помощью `mypy --strict` и 142 автоматизированных тестов.
+
+---
+
+## Образование (Education)
+
+**Высшее образование (Компьютерные науки / Информационные системы)**  
+Специализация: Системное администрирование Linux, Docker, Ansible, бэкенд-разработка на Python, нейросети и глубокое обучение (PyTorch).

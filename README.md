@@ -1,160 +1,130 @@
 <div align="center">
 
-<img width="100%" src="./assets/header.svg" alt="Mikhail (DelixeamI): AI & LLM Systems Engineer · Production LLM Backend · Healthcare & Multimodal AI Platforms" />
+<img width="100%" src="./assets/header.svg" alt="Михаил (DelixeamI): AI & LLM Systems Engineer · Production LLM Backend · Healthcare & On-Premise AI Platforms" />
 
 [![Telegram](https://img.shields.io/badge/Telegram-@Mihail__r63-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Mihail_r63)
 [![Email](https://img.shields.io/badge/Email-mikhailivanovr%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mikhailivanovr@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-DelixeamI-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DelixeamI)
-[![AI Portfolio](https://img.shields.io/badge/AI_Engineering_Portfolio-111827?style=for-the-badge&logo=readthedocs&logoColor=white)](AI_LLM_PORTFOLIO.md)
-[![Case Studies](https://img.shields.io/badge/Case_Studies-374151?style=for-the-badge&logo=readthedocs&logoColor=white)](CASE_STUDIES.md)
-[![CV](https://img.shields.io/badge/View_CV-2563EB?style=for-the-badge&logo=readme&logoColor=white)](CV.md)
+[![AI Портфолио](https://img.shields.io/badge/AI_Портфолио-111827?style=for-the-badge&logo=readthedocs&logoColor=white)](AI_LLM_PORTFOLIO.md)
+[![Архитектурные кейсы](https://img.shields.io/badge/Архитектурные_кейсы-374151?style=for-the-badge&logo=readthedocs&logoColor=white)](CASE_STUDIES.md)
+[![Резюме CV](https://img.shields.io/badge/Резюме_CV-2563EB?style=for-the-badge&logo=readme&logoColor=white)](CV.md)
 
 <br/>
 
-![Precision](https://img.shields.io/badge/Price_Match_Precision-97.5%25-22C55E?style=flat-square)
-![Tests](https://img.shields.io/badge/Clinical_Guardrail_Tests-218_Pass-0EA5E9?style=flat-square)
-![Speed](https://img.shields.io/badge/Multimodal_Video_Speed-6.5x_RT-8B5CF6?style=flat-square)
-![Cost](https://img.shields.io/badge/Local_Inference_Cost-$0.00-10B981?style=flat-square)
-![DAG](https://img.shields.io/badge/Content--Addressed_DAG-14_Stages-F59E0B?style=flat-square)
-![Infra](https://img.shields.io/badge/Production_Monitoring-Zabbix_+_Grafana-6366F1?style=flat-square)
+![Точность](https://img.shields.io/badge/Матчинг_прайсов-97.5%25_Precision-22C55E?style=flat-square)
+![Тесты](https://img.shields.io/badge/Клинические_правила-218_Pass-0EA5E9?style=flat-square)
+![Галлюцинации](https://img.shields.io/badge/Галлюцинации_в_цифрах-0%25-8B5CF6?style=flat-square)
+![Инференс](https://img.shields.io/badge/Локальный_инференс-Ollama_/_vLLM-10B981?style=flat-square)
+![Инфраструктура](https://img.shields.io/badge/Мониторинг-Zabbix_+_Grafana-6366F1?style=flat-square)
 
 <br/>
 
-**Telegram [@Mihail_r63](https://t.me/Mihail_r63) · [+7 (927) 899-24-96](tel:+79278992496) · [mikhailivanovr@gmail.com](mailto:mikhailivanovr@gmail.com) · Russia · Open to Remote (Middle AI / LLM Engineer)**
+**Telegram [@Mihail_r63](https://t.me/Mihail_r63) · [+7 (927) 899-24-96](tel:+79278992496) · [mikhailivanovr@gmail.com](mailto:mikhailivanovr@gmail.com) · Россия · Открыт к предложениям (Middle AI / LLM Engineer)**
 
 </div>
 
 ---
 
-##  Profile 
+## ⚡ О себе и инженерный подход
 
-I am an **AI / LLM Systems Engineer** focused on production LLM reliability, deterministic guardrails, self-hosted local inference, and high-performance backend pipelines.
+Я — **AI / LLM Systems Engineer** с практическим фокусом на надёжности production-пайплайнов, детерминированных защитных контурах (guardrails), локальном self-hosted инференсе и высокопроизводительных бэкенд-сервисах.
 
-With **2.5+ years of production infrastructure engineering** (Linux, Docker, Zabbix/Grafana cluster monitoring, subnet isolation, InfoSec/EDS) and **commercial Python backend experience in Healthcare** (LIS integration and medical analyzer stream protocols), I bridge the gap between probabilistic machine learning and mission-critical production systems.
+Имея **более 2.5 лет опыта в инфраструктуре и системном администрировании** (Linux, кластерный мониторинг Zabbix/Grafana, сегментация сетей VLAN 802.1Q, информационная безопасность и ГОСТ ЭЦП) и **коммерческий опыт Python-разработки в сфере Healthcare** (автоматизация обмена данными с АльфаЛаб ЛИС и парсинг потоковых протоколов медицинских анализаторов), я соединяю вероятностные языковые модели с жесткими требованиями mission-critical систем.
 
----
-
-## Selected Production & Engineering Results
-
-- **97.5% Precision on 196-Item Clinical Benchmark** ([`lab-price-matcher`](https://github.com/DelixeamI/lab-price-matcher)): Built a 3-tier matching pipeline (`retrieve → filter → judge`) aligning 2,300+ medical services against 656 internal records. Local reasoning model (`qwen3:8b`) dropped false positive pairs from **29 to 3**, achieving **88.1% price catalog coverage**.
-- **Zero-Hallucination Clinical MVP** ([`skylab-med-ai`](AI_LLM_PORTFOLIO.md#case-2-skylab-med-ai-zero-hallucination-clinical-report-interpretation)): Architected a 5-layer diagnostic report interpreter. Ensured 100% deterministic numeric checks and PII de-identification before generating patient summaries. Guarded by **218 automated unit tests**.
-- **6.5x Real-Time Multimodal Pipeline at $0.00 API Cost** ([`stream-highlight-harvester`](https://github.com/DelixeamI/stream-highlight-harvester)): Designed a 2-tier DAG engine for processing 2–8 hour video streams. Fast deterministic ML (Whisper ASR, Silero VAD, CV motion) filters **98% of dead time**, while a multimodal VLM arbiter verifies keyframe killfeeds with strict Pydantic output.
-- **Production Async LLM Gateway** ([`llm-chat-api`](https://github.com/DelixeamI/llm-chat-api)): Built an asynchronous FastAPI service with Redis caching for zero-temperature responses, semaphore-based concurrency caps, token-cost metering, and sliding-window context management. Tested under `mypy --strict` with **142 tests**.
-- **Mission-Critical Systems & LIS Integration** (SkyLab Laboratory): Developed custom Python drivers interfacing with automated medical analyzers (raw serial/socket stream parsing). Deployed end-to-end telemetry across physical and virtual servers using **Zabbix + Grafana**.
+Я отношусь к LLM не как к «магическому оракулу», а как к **медленной, вероятностной и недоверенной внешней зависимости**. Проектирование надежных систем вокруг них опирается на принципы:
+- **Zero-trust границы данных**: строгие Pydantic v2 схемы (`frozen=True`, `extra="forbid"`), генерация по жесткой JSON Schema и пошаговая runtime-валидация каждого ответа.
+- **Детерминированность в первую очередь**: валидация чисел, диапазонов, медицинских правил и логика отказа работают детерминированно в коде; модели отдаются только формулирование текста и сложный семантический арбитраж.
+- **Контур приватности и локальный инференс**: on-premise стек (Ollama, vLLM, Qwen, эмбеддинги BGE), гарантирующий, что коммерческая тайна и персональные данные (152-ФЗ) физически не покидают периметр компании.
+- **Количественная оценка качества**: отказ от оценки «на глаз» (vibe checks) в пользу воспроизводимых офлайн-бенчмарков, честного разделения датасетов (train/val/test), контроля метрик Precision, Recall@k, MRR и отслеживания скрытых ошибок (silent failure rate).
 
 ---
 
-## Featured Engineering Work
+## 🚀 Продакшн-результаты и коммерческий опыт
 
-### 1. [lab-price-matcher: Hybrid RAG & Domain-Constrained LLM Judge](https://github.com/DelixeamI/lab-price-matcher)
-> **Stack**: Python 3.12 · Ollama (`qwen3:8b`) · BGE-M3 Embeddings · RapidFuzz · Pydantic · Offline Evals
+- **SkyLab Med AI: Конвейер автоматической расшифровки лабораторных бланков** ([Архитектурный кейс](AI_LLM_PORTFOLIO.md#case-2-skylab-med-ai-zero-hallucination-clinical-report-interpretation)):  
+  Спроектировал и внедрил защищенный on-premise сервис расшифровки медицинских анализов для пациентов по PDF-бланкам без передачи конфиденциальных данных во внешние API.
+  - Разделил систему на 5 изолированных слоев: геометрическое извлечение таблиц PDF без OCR (`pdfminer.six`), строгая валидация числовых значений (V0–V10), 112 неизменяемых контрактов данных Pydantic v2, контур деперсонализации (полное отсечение ФИО и ПДн перед передачей в движок) и детерминированный Medical Engine на базе верифицированных врачами правил.
+  - Полностью исключил риск медицинских галлюцинаций: логика интерпретации отделена от языковой модели. Локальная LLM (Qwen через Ollama) формирует только стилистическое резюме, вывод которого повторно валидируется кодом на отсутствие подмены цифр.
+  - Защищено **218 автоматическими unit-тестами**. Проверено на 139 реальных бланках (15 пакетных PDF, 2023 показателя) — 0 аварийных завершений, 0 расхождений с лабораторными референсными значениями.
 
-```mermaid
-flowchart LR
-    A["Raw Lab Price Lists (SkyLab vs Competitor)"] --> B["Normalizer: delookalike() + Regex"]
-    B --> C["Candidate Retrieval: BGE-M3 (k=15) + RapidFuzz"]
-    C --> D{"20+ Deterministic Domain Filters (compatible())"}
-    D -->|Passed Candidates| E["Local LLM Judge (Ollama Qwen 8B)"]
-    D -->|Rejected| X["Discard / Audit Log"]
-    E --> F["JSON Schema Output: match + confidence"]
-    F --> G["Agreement Splitter: Precision 97.5% (Cover 88.1%)"]
-```
+- **lab-price-matcher: Интеллектуальное сопоставление номенклатуры и прайсов** ([Архитектурный кейс](AI_LLM_PORTFOLIO.md#case-1-cross-catalog-lab-price-matcher-hybrid-rag--local-judge)):  
+  Разработал высокоточный пайплайн сопоставления услуг лаборатории (648 тестов) с несовместимым каталогом конкурента (2330 позиций) по каскадной архитектуре `retrieve → filter → judge`.
+  - Реализовал двухконтурный поиск кандидатов: плотные эмбеддинги `bge-m3` (top-10) + лексический анализ `rapidfuzz` (top-5), обеспечив покрытие верного кандидата в 97.1%.
+  - Спроектировал детерминированные доменные фильтры на Python до обращения к LLM (разграничение качественного/количественного ПЦР, биоматериала, антител IgM/IgG), отсекающие 90%+ некорректных пар без затрат ресурсов модели.
+  - Настроил локальную модель `qwen3:8b` (Ollama) в режиме рассуждения (thinking) со строгим JSON Schema; сократил число ложных срабатываний с 29 до 3.
+  - На эталонном датасете из 196 размеченных анализов достиг показателей: **Precision 97.5%**, **Recall 91.8%**, покрытие каталога с ценой **88.1%** (578 из 656 услуг).
 
-- **Problem**: Synchronizing pricing across competing medical laboratories with incompatible test codes and naming discrepancies (e.g., *IgM* vs *IgG*, qualitative vs quantitative PCR, multi-marker panels vs single assays). A wrong match publishes an incorrect clinical price.
-- **Architecture**: `Retrieve → Filter → Judge`. Dense vector search (`bge-m3`) and fuzzy token matching propose top candidates; a deterministic rule engine (`compatible()`) enforces ~20 medical constraints before invoking the model; local `qwen3:8b` running in Ollama on an RTX 5070 performs final arbitration.
-- **Key Engineering**: Enabled model reasoning mode, reducing false pairs from **29 to 3**. Verified on an offline double-annotated ground-truth benchmark (196 tests).
+- **Интеграция с автоматическими анализаторами и ЛИС («СкайЛаб»)**:  
+  Разработал специализированные драйверы на Python для лабораторной информационной системы («АльфаЛаб» ЛИС). Реализовал непрерывный съём и парсинг потоковых данных с автоматических медицинских анализаторов по протоколам serial (RS-232) и TCP-сокетам с автоматической загрузкой результатов исследований в базу данных, минимизировав ручной ввод данных операторами.
 
----
-
-### 2. [skylab-med-ai: Clinical Report Interpreter with Zero Hallucination](AI_LLM_PORTFOLIO.md#case-2-skylab-med-ai-zero-hallucination-clinical-report-interpretation)
-> **Stack**: Python 3.12 · PDF Extraction · Deterministic Medical Rule Engine · PII Masking · Local SLM Summary · 218 Tests
-
-```mermaid
-flowchart LR
-    P["Patient PDF Lab Report"] --> Ext["PDF Plumber / Text Extraction"]
-    Ext --> Val["Regex & Numeric Range Validator"]
-    Val --> PII["De-identification (Strip Name, DoB, IDs)"]
-    PII --> Rules["Deterministic Clinical Knowledge Engine"]
-    Rules --> Rpt["Structured Reference Output"]
-    Rpt --> LLM["Local SLM (Summary Only, No Decisions)"]
-    LLM --> Out["Validated Plain-Language Patient Summary"]
-```
-
-- **Problem**: Delivering clear, accessible lab test interpretations to patients without risking dangerous LLM medical hallucinations or leaking protected health information (PHI).
-- **Architecture**: Strict decoupling. Medical reference ranges, flag evaluations (normal/elevated/depleted), and diagnostic groupings are **100% deterministic**. The local LLM is only utilized to draft a non-diagnostic executive summary.
-- **Reliability & Testing**: **218 unit tests** verify boundary numbers, edge cases, and silent failure rates. All patient identifiers are completely stripped prior to entering memory.
+- **Инфраструктура, кластерный мониторинг и сетевая безопасность («СкайЛаб»)**:  
+  Развернул и поддерживал систему мониторинга 40+ физических и виртуальных серверов на базе **Zabbix + Grafana** с оперативным алертингом. Спроектировал и внедрил сегментацию сети (802.1Q VLAN), логически изолировав контур медицинских анализаторов от общедоступного сегмента. Сопровождал корпоративную инфраструктуру криптозащиты и электронных цифровых подписей (КриптоПро CSP, ГОСТ ЭЦП) для 60+ рабочих станций.
 
 ---
 
-### 3. [stream-highlight-harvester: Multimodal 14-Stage DAG Pipeline](https://github.com/DelixeamI/stream-highlight-harvester)
-> **Stack**: Python 3.12 · Whisper ASR · Silero VAD · OpenCV · Multimodal Video-VLM · NVENC HW Render · DAG Engine
+## 🛠️ Избранные инженерные проекты
 
-```mermaid
-flowchart TD
-    VOD["Raw Stream Video (2-8 Hours)"] --> DAG["14-Stage DAG Engine (SHA-256 Content-Addressed Cache)"]
-    DAG --> T1["Tier 1: Heuristic Filter (Whisper ASR + Silero VAD + Spectral Audio + CV)"]
-    T1 -->|Filters 98% Dead Air| S["Interest Curve S(t) & Candidate Keyframe Pack (8 frames, ~300KB)"]
-    S --> T2["Tier 2: Multimodal VLM Arbiter (Gemini 3.1 Flash Lite / Qwen 2.5)"]
-    T2 --> Pyd["Pydantic JudgeVerdict (Killfeed Grounding + Action Verification)"]
-    Pyd --> NV["Hardware NVENC Rendering Engine ($0.00 Compute Cost)"]
-    NV --> Clip["Exported Highlight Reels & Shorts"]
-```
+### 1. [hybrid-rag: Гибридный RAG по Трудовому кодексу с детерминированной валидацией и калибровкой отказа](https://github.com/DelixeamI/hybrid-rag)
 
-- **Problem**: Finding high-energy highlight moments in long gaming VODs without paying massive cloud multimodal processing fees (~$40/stream) or falling for false audio triggers (screams from falling off ladders).
-- **Architecture**: Two-tier cascade. Tier 1 uses lightweight CPU/GPU models (Whisper with custom phonetic dictionary, Silero voice detection, motion vectors) to eliminate 98% of dead air. Tier 2 sends compact 8-frame keyframe bundles to a multimodal VLM arbiter for strict visual verification.
-- **Performance**: Processes 3.5-hour streams in **28 minutes (6.5x real-time)** at **$0.00 cost**, protected by 113 DAG tests.
+[![CI](https://img.shields.io/github/actions/workflow/status/DelixeamI/hybrid-rag/ci.yml?branch=main&label=CI&logo=github)](https://github.com/DelixeamI/hybrid-rag/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://github.com/DelixeamI/hybrid-rag/blob/main/LICENSE)
+[![python](https://img.shields.io/badge/python-3.12-blue.svg)](https://github.com/DelixeamI/hybrid-rag/blob/main/pyproject.toml)
+[![tests](https://img.shields.io/badge/tests-130-brightgreen.svg)](https://github.com/DelixeamI/hybrid-rag/tree/main/tests)
 
----
+Сервис ответов на юридические вопросы по Трудовому кодексу РФ с детерминированным контролем галлюцинаций и тестами, подтверждающими качество на каждом шаге. Основная инженерная сложность в RAG — не написание промпта, а обеспечение надежного ретривала, калиброванного порога отказа на вопросах без ответа и жесткой валидации того, что каждое число и факт подтверждены источником.
 
-### 4. [llm-chat-api: Production-Grade Async LLM Gateway](https://github.com/DelixeamI/llm-chat-api)
-> **Stack**: Python 3.12 · FastAPI · Pydantic v2 · PostgreSQL · Redis · Ollama · Docker Compose · mypy --strict
+- **гибридный ретривер**: комбинация плотного поиска (dense multilingual-e5-small с pgvector) и разреженного BM25 на полнотекстовых лексемах PostgreSQL (`russian`), объединенных через Reciprocal Rank Fusion (RRF, top-20) с параметрами $k=10$ и весом плотного поиска 3.0;
+- **cross-encoder реранкер**: модель `BAAI/bge-reranker-v2-m3` отбирает top-5 релевантных чанков, повышая Recall@5 с 84.2% до 93.4% и MRR с 0.795 до 0.898 на полном тексте кодекса;
+- **калиброванный отказ от генерации**: порог уверенности реранкера ($0.0066$) отсекает нерелевантные запросы до вызова LLM, обеспечивая 100% корректных отказов на `no_answer` вопросах и лишь 1.3% ложных отказов на ответимых;
+- **детерминированный валидатор фактов и цитат**: код проверяет совпадение номеров статей, сроков и чисел с единицами измерения по цитатам фрагментов, гарантируя точность фактов в 92.0% ответов и безопасную деградацию до списка статей при непрохождении валидации;
+- **кассетный офлайн-инференс**: класс `RecordedLLM` воспроизводит сохраненные ответы без обращения к внешним API, что позволяет запускать полный цикл валидации качества в CI без секретов и задержек;
+- **асинхронный FastAPI-сервис**: продакшн-эндпоинты `/ask` и `/health`, структурированные JSON-логи с разбивкой латентности по стадиям (ретривал, реранк, генерация, валидация) и идемпотентный ингест по sha256 документа.
 
-- **Reliability Layer**: Concurrency rate-limiting via async semaphores, per-request token budgets, sliding-window context truncation, and selective retries with exponential backoff for transient errors (429, 503).
-- **Cost & Latency Optimization**: Deterministic Redis caching for zero-temperature requests; token counting and cost attribution stored in PostgreSQL.
-- **Strict Typing & Testing**: Enforces JSON Schema structured outputs (100% schema conformance on test suites), 142 automated tests, strict mypy validation.
+130 тестов, работа без внешней сети и API-ключей. В [DESIGN.md](https://github.com/DelixeamI/hybrid-rag/blob/main/DESIGN.md) подробно зафиксированы архитектурные решения, обоснования выбора компонентов и измеренные компромиссы между качеством и скоростью.
 
 ---
 
-## 🏛️ Infrastructure & Systems Engineering Foundations
+### 2. [entity-cascade: Каскадный пайплайн сопоставления номенклатуры товаров с оптимизацией компромисса автоматизации и точности](https://github.com/DelixeamI/entity-cascade)
 
-My background in **Systems Administration & IT Security** at SkyLab provides a strong operational foundation:
+[![CI](https://img.shields.io/github/actions/workflow/status/DelixeamI/entity-cascade/ci.yml?branch=main&label=CI&logo=github)](https://github.com/DelixeamI/entity-cascade/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/DelixeamI/entity-cascade/blob/main/LICENSE)
+[![python](https://img.shields.io/badge/python-3.12-blue)](https://github.com/DelixeamI/entity-cascade/blob/main/pyproject.toml)
+[![tests](https://img.shields.io/badge/tests-169_passed-brightgreen)](https://github.com/DelixeamI/entity-cascade/tree/main/tests)
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                   Production Infrastructure Matrix                      │
-├──────────────────────────┬──────────────────────────────────────────────┤
-│ Cluster Monitoring       │ Zabbix + Grafana (virtual & physical hosts)  │
-│ Containerization         │ Docker, Docker Compose, Multi-stage builds   │
-│ Network & Security       │ Subnet segmentation (Staff vs Public VLANs)  │
-│ Identity & Encryption    │ Digital Signature Infrastructure (EDS/ЭЦП)   │
-│ Hardware Integration     │ Serial / TCP Python drivers for LIS Analyzers│
-│ Local Compute Inference  │ Dedicated RTX 5070 running Ollama / vLLM     │
-└──────────────────────────┴──────────────────────────────────────────────┘
-```
+Каскадный конвейер сопоставления прайс-листов поставщиков с эталонным каталогом продукции и тесты, верифицирующие его границы. Ключевая инженерная задача здесь — не бездумная отправка всех строк в дорогую LLM, а математически выверенный поиск границы между долей автоматизации и точностью системы на отложенной тестовой выборке.
+
+- **трехзонная архитектура маршрутизации**: автоматическое подтверждение (`auto_match`) для пар с высоким скором и отрывом (margin), серая зона (`gray band`) для разрешения локальной LLM и эскалация оператору (`human_review`) для сомнительных строк;
+- **двухстадийный гибридный поиск**: плотные векторные эмбеддинги (`bge-small-en-v1.5`) и BM25 с ранговым слиянием RRF (top-20), дополненные cross-encoder моделью (`ms-marco-MiniLM-L-6-v2`);
+- **доменные фичи и эвристики**: выделение кодов моделей и брендов с расчетом запаса уверенности между кандидатами, что повышает долю автоматизации с 28.3% до 67.7% при сохранении точности 96.7%;
+- **локальный LLM-арбитр с JSON-схемой**: квантованная модель `qwen2.5:14b` через Ollama с Pydantic-контрактом, закрывающая 45.4% серой зоны с точностью 84.8% при $0.00 расходов на облачные токены;
+- **детерминированная подгонка порогов (`fit_thresholds`)**: калибровка порогов срабатывания строго на валидационной выборке с оценкой нижней границы Вильсона (Wilson 95% bound) для предотвращения переобучения на тест;
+- **контроль переноса домена**: оценка устойчивости калибровки при применении к новому датасету (Amazon-Google) без переобучения, с прозрачной фиксацией падения метрик при смене домена.
+
+169 тестов, запуск без сети и API-ключей. В [DESIGN.md](https://github.com/DelixeamI/entity-cascade/blob/main/DESIGN.md) задокументированы архитектурные компромиссы, цена каждого решения и поведение системы при отказе внешних провайдеров.
 
 ---
 
-## Technical Skills
+## 🧰 Технические навыки
 
-| Domain | Technologies & Frameworks |
+| Направление | Технологии и инструменты |
 |---|---|
-| **AI / LLM Engineering** | Ollama, Local Qwen 2.5/3, Gemini API, PyTorch, LangGraph concepts, Structured Outputs, JSON Schema, Prompt Engineering, Guardrails |
-| **RAG & Retrieval** | BGE-M3 Embeddings, Vector Similarity, Cosine Distance, RapidFuzz, Candidate Filtering, Hybrid Search, Offline Evaluation |
-| **Backend & Architecture** | Python 3.12, FastAPI, AsyncIO, Pydantic v2, REST APIs, Streaming Responses, DAG Pipeline Engines, Modular Architecture |
-| **Databases & Caching** | PostgreSQL (Relational schema, transactions), Redis (Response cache, semaphores, rate limiting) |
-| **DevOps & Infrastructure** | Linux (Ubuntu/Debian), Docker, Docker Compose, Zabbix, Grafana, Git, GitHub Actions CI/CD |
-| **Testing & Quality** | Pytest, Unittest, Mypy (strict), Benchmarking, Precision/Recall offline evals, Silent error metrics |
+| **AI & LLM Engineering** | Ollama, Local Qwen 2.5/3, Gemini API, PyTorch, Structured Outputs, JSON Schema, Prompt Engineering, Guardrails, Self-hosted инференс |
+| **RAG и поиск данных** | Эмбеддинги BGE (BGE-M3, BGE-Small), векторный поиск (pgvector, Qdrant), BM25, Reciprocal Rank Fusion (RRF), Cross-Encoder реранкеры, офлайн-бенчмарки |
+| **Бэкенд и архитектура** | Python 3.12, FastAPI, AsyncIO, Pydantic v2, REST API, стриминг ответов, многостадийные DAG-пайплайны, модульная архитектура |
+| **Базы данных и кэширование** | PostgreSQL (реляционные схемы, транзакции, полнотекстовый поиск), Redis (кэширование, семафоры, rate limiting) |
+| **DevOps и инфраструктура** | Linux (Ubuntu/Debian), Docker, Zabbix, Grafana, Git, GitHub Actions CI/CD, компьютерные сети (802.1Q VLAN), ГОСТ ЭЦП |
+| **Тестирование и валидация** | Pytest, Mypy (strict), воспроизводимые кассеты (RecordedLLM), офлайн-оценка метрик (Precision, Recall@k, MRR), трекинг скрытых ошибок (silent failure rate) |
 
 ---
 
-##  Portfolio Documentation & Case Studies
+## 📚 Документация и архитектурные кейсы
 
--  **[Detailed AI Engineering Portfolio (AI_LLM_PORTFOLIO.md)](AI_LLM_PORTFOLIO.md)**: In-depth breakdown of state orchestration, Pydantic contracts, deterministic fallback chains, and retrieval evaluation.
--  **[Engineering Case Studies (CASE_STUDIES.md)](CASE_STUDIES.md)**: Real-world problems, trade-offs, architecture decisions, and business impact from healthcare and AI pipelines.
--  **[Curriculum Vitae (CV.md)](CV.md)**: Concise, professional resume formatted for engineering hiring managers.
+- 📖 **[Подробное AI-портфолио (AI_LLM_PORTFOLIO.md)](AI_LLM_PORTFOLIO.md)**: Детальный разбор оркестрации состояний, строгих контрактов Pydantic v2, детерминированных цепочек деградации и оценки ретривала.
+- 🔬 **[Инженерные кейсы (CASE_STUDIES.md)](CASE_STUDIES.md)**: Реальные производственные задачи, архитектурные компромиссы, принятые решения и бизнес-эффект в медицине и AI-конвейерах.
+- 📄 **[Резюме инженера (CV.md)](CV.md)**: Лаконичное профессиональное резюме для технических руководителей и hiring-менеджеров.
 
 ---
 
 <div align="center">
-  <sub>Engineered with precision, test-driven validation, and zero-trust LLM guardrails.</sub>
+  <sub>Разработано с упором на детерминированную надежность, строгое тестирование и zero-trust защиту LLM-пайплайнов.</sub>
 </div>

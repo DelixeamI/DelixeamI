@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 130" width="100%" height="130">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0b1329" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .title { font-weight: 800; font-size: 30px; letter-spacing: -0.5px; fill: #ffffff; }
+    .subtitle { font-weight: 500; font-size: 14px; fill: #94a3b8; letter-spacing: 0.2px; }
+  </style>
+
+  <!-- Background Card -->
+  <rect width="918" height="128" x="1" y="1" rx="14" fill="url(#bgGradient)" stroke="#1e293b" stroke-width="1.5" />
+  
+  <!-- Subtle Glow Effect -->
+  <circle cx="840" cy="35" r="70" fill="#6366f1" opacity="0.14" filter="url(#subtleGlow)" />
+  <circle cx="80" cy="95" r="70" fill="#06b6d4" opacity="0.12" filter="url(#subtleGlow)" />
+
+  <!-- Main Name & Title (Centered Vertically) -->
+  <g transform="translate(40, 56)">
+    <text x="0" y="0" class="sans title">Mikhail <tspan fill="url(#textGradient)">· AI &amp; LLM Systems Engineer</tspan></text>
+    <text x="0" y="26" class="sans subtitle">Production LLM Reliability · Hybrid RAG &amp; Search · GigaChat &amp; Local Inference · Systems Architecture</text>
+  </g>
+</svg>

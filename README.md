@@ -25,7 +25,7 @@ AI / LLM Engineer. Строю LLM-сервисы, которым можно до
 
 | Направление | Стек и технологии |
 |---|---|
-| **AI & LLM Engineering** | GigaChat API (OAuth, сертификаты Минцифры), YandexGPT, Ollama, Qwen 2.5/3, Structured Outputs (Pydantic v2 / JSON Schema), Tool Calling, LangGraph, Prompt Engineering |
+| **AI & LLM Engineering** | GigaChat API (OAuth, сертификаты Минцифры), Ollama, Qwen 2.5/3, Structured Outputs (Pydantic v2 / JSON Schema), Tool Calling, LangGraph, Prompt Engineering |
 | **RAG и поиск** | Гибридный поиск (dense + sparse), Reciprocal Rank Fusion (RRF), cross-encoder реранкинг (`bge-reranker-v2-m3`), эмбеддинги (`multilingual-e5`, `bge-m3`), BM25, PostgreSQL FTS |
 | **Хранилища** | PostgreSQL (pgvector, HNSW, SQL-фильтрация), Redis (кэш, rate limiting, дедупликация), Qdrant |
 | **Бэкенд и архитектура** | Python 3.12, FastAPI, asyncio (Semaphore, Token Bucket, DAG-пайплайны), Pydantic v2, REST API, интеграция с 1С |
